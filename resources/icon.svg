@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <!-- theme-pill 身份图「全胶囊」：泡泡糖粉胶囊 + 内圈留缝 + 一枚更小的胶囊浮在上方留缝处
+       意象 = 该主题把圆角八档全拉到 999px（全胶囊）＋悬浮形态（留缝/圆角/投影/发丝光边）
+       ——故载体不做方块而做真胶囊，上浮的小胶囊就是「悬浮」二字
+       家族：135° 双档渐变 + 白玻璃罩 + 发丝光边（Type-2 彩色身份图）；粉取主题 accent #D6336C
+       构图：悬浮块 y5..13 + 主体 y16..43 合成后整体居中（上下各留 5px），不偏上 -->
+  <defs>
+    <linearGradient id="plBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F26D9E"/>
+      <stop offset="1" stop-color="#A61E4D"/>
+    </linearGradient>
+    <linearGradient id="plSheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.03"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 悬浮的小胶囊（与主体之间留 3px 缝） -->
+  <rect x="26.5" y="5" width="15.5" height="8" rx="4" fill="#FFE4EE"/>
+  <rect x="26.5" y="5" width="15.5" height="8" rx="4" fill="none" stroke="#D6336C" stroke-opacity="0.3"/>
+
+  <!-- 主体胶囊（真全圆端；与悬浮块合成后整体在画布正中：y 5..43） -->
+  <rect x="4" y="16" width="40" height="27" rx="13.5" fill="url(#plBg)"/>
+  <rect x="4" y="16" width="40" height="27" rx="13.5" fill="url(#plSheen)"/>
+  <rect x="4.5" y="16.5" width="39" height="26" rx="13" fill="none" stroke="#FFD7E6" stroke-opacity="0.4"/>
+
+  <!-- 内圈留缝（离边 3.5px 的第二圈圆角，读作该主题的「留缝」机制） -->
+  <rect x="7.6" y="19.6" width="32.8" height="19.8" rx="9.9" fill="none" stroke="#FFFFFF" stroke-opacity="0.26" stroke-width="1"/>
+
+  <!-- 镜面高光 -->
+  <rect x="9.8" y="21" width="13.5" height="3.1" rx="1.55" fill="#FFFFFF" opacity="0.55"/>
+</svg>
