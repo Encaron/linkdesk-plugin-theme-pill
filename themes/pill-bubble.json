@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@linkdesk/plugin-sdk/schemas/theme.schema.json",
   "id": "theme-pill.pill-bubble",
-  "name": "全胶囊 Pill Bubble",
+  "name": "全胶囊",
   "type": "light",
   "appearance": {
     "radius": {
